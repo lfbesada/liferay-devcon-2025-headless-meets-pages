@@ -239,22 +239,6 @@ wait_for_user
 
 clear
 
-# --- Final Conclusion (ALL in English) ---
-
-echo "====================================================================="
-echo -e "   ${BOLD}${GREEN}MIGRATION COMPLETE${RESET} | ${BOLD}API FLEXIBILITY DEMONSTRATED${RESET}"
-echo "====================================================================="
-echo -e ""
-echo -e "${BOLD}Observation: Missing Mapped Web Content on Target Site${RESET}"
-echo -e "We have successfully created the Widget Page and updated the Home Page on the Target Site, now showing the new content structures."
-echo -e ""
-echo -e "However... we noticed the mapped web content is missing on the site."
-echo -e ""
-echo -e "${BOLD}${YELLOW}Don't panic!${RESET}"
-echo -e ""
-
-wait_for_user
-
 echo -e "${BOLD}${GREEN}This highlights a key feature of the new Headless API:${RESET}"
 echo -e ""
 echo -e "With this new API, all content references are ${BOLD}optional${RESET}, and the import order does not matter:"
@@ -262,10 +246,6 @@ echo -e ""
 echo -e "  • ${GREEN}Resilience:${RESET} Even though the Web Content reference did not exist in the target site, our page import did not fail."
 echo -e "  • ${GREEN}Automatic Synchronization:${RESET} When we later create that reference in the site (by importing or creating the referenced Web Content), the content will ${BOLD}automatically${RESET} display on the page without needing any further action for the page itself."
 echo -e ""
-echo -e "To prove this, the next step would be to export and import the web content from the source site."
-echo -e ""
-
-wait_for_user
 
 echo "====================================================================="
 echo -e ""
