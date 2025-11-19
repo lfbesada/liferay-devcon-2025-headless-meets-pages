@@ -95,7 +95,6 @@ wait_for_user
 next_action "1. GET All Site Pages"
 echo "ℹ️  Action: Retrieving list of all Site Pages to extract base data."
 echo -e "ℹ️  Endpoint: ${RED}${BOLD}${PORTAL_URL}${API_PATH}/${TARGET_SITE_ERC}/site-pages?pageSize=-1${RESET}"
-wait_for_user
 
 # Capture JSON response
 PAGES_LIST_JSON=$( { set +x; } 2>/dev/null; \

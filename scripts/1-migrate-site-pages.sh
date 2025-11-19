@@ -80,7 +80,6 @@ echo ""
 next_action "1. GET All Site Pages from Origin Site"
 echo -e "ℹ️  ${BOLD}Action:${RESET} Retrieve the list of all Site Pages from the Origin site, using ${BOLD}nestedFields=pageSpecifications${RESET} to fetch the content simultaneously."
 echo -e "ℹ️  ${BOLD}Endpoint:${RESET} ${RED}${BOLD}${PORTAL_URL}${API_PATH}/${ORIGIN_SITE_ERC}/site-pages?pageSize=-1&nestedFields=pageSpecifications${RESET}"
-wait_for_user
 
 echo "====================================================================="
 echo "  STARTING BULK PAGE EXPORT"
@@ -142,7 +141,6 @@ fi
 next_action "2. Start Iterative Import (PUT/POST each page to Target Site)"
 echo "ℹ️  ${BOLD}Action:${RESET} Iterate through all pages to clean payload and update on Target site. This process ensures all content is transferred by relying on the initial fetch using the **nestedFields=pageSpecifications** parameter."
 echo -e "ℹ️  ${BOLD}Endpoint:${RESET} ${RED}${BOLD}${PORTAL_URL}${API_PATH}/${TARGET_SITE_ERC}/site-pages/{pageErc}${RESET} (PUT for ContentPage, POST for WidgetPage)"
-wait_for_user
 
 echo "====================================================================="
 echo "  STARTING IMPORT LOOP"

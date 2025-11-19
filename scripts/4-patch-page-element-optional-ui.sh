@@ -256,10 +256,6 @@ echo -e "This illustrates how the API enables highly ${BOLD}specific and partial
 echo ""
 echo "====================================================================="
 
-wait_for_user
-
-clear
-
 # --- Final Conclusion Text 2 ---
 echo "====================================================================="
 echo ""
