@@ -276,8 +276,8 @@ wait_for_user
 clear
 
 # --- Final Conclusion Text ---
-echo "====================================================================="
-echo ""
-echo -e "This demonstrates how a single ${BOLD}POST request can achieve complex updates—creating a draft and modifying its content${RESET} layout—which would typically involve multiple steps within the user interface."
-echo ""
-echo "====================================================================="
+# echo "====================================================================="
+# echo ""
+# echo -e "This demonstrates how a single ${BOLD}POST request can achieve complex updates—creating a draft and modifying its content${RESET} layout—which would typically involve multiple steps within the user interface."
+# echo ""
+# echo "====================================================================="

@@ -237,15 +237,15 @@ wait_for_user
 
 clear
 
-echo -e "${BOLD}${GREEN}This highlights a key feature of the new Headless API:${RESET}"
-echo -e ""
-echo -e "With this new API, all content references are ${BOLD}optional${RESET}, and the import order does not matter:"
-echo -e ""
-echo -e "  • ${GREEN}Resilience:${RESET} Even though the Web Content reference did not exist in the target site, our page import did not fail."
-echo -e "  • ${GREEN}Automatic Synchronization:${RESET} When we later create that reference in the site (by importing or creating the referenced Web Content), the content will ${BOLD}automatically${RESET} display on the page without needing any further action for the page itself."
-echo -e ""
+# echo -e "${BOLD}${GREEN}This highlights a key feature of the new Headless API:${RESET}"
+# echo -e ""
+# echo -e "With this new API, all content references are ${BOLD}optional${RESET}, and the import order does not matter:"
+# echo -e ""
+# echo -e "  • ${GREEN}Resilience:${RESET} Even though the Web Content reference did not exist in the target site, our page import did not fail."
+# echo -e "  • ${GREEN}Automatic Synchronization:${RESET} When we later create that reference in the site (by importing or creating the referenced Web Content), the content will ${BOLD}automatically${RESET} display on the page without needing any further action for the page itself."
+# echo -e ""
 
-echo "====================================================================="
-echo -e ""
-echo -e ${BOLD}"Once the reference exists in the site the content is now visible without any extra actions.${RESET}"
-echo "====================================================================="
+# echo "====================================================================="
+# echo -e ""
+# echo -e ${BOLD}"Once the reference exists in the site the content is now visible without any extra actions.${RESET}"
+# echo "====================================================================="
