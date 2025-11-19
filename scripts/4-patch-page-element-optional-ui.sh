@@ -119,9 +119,9 @@ echo "  [PAGE ELEMENT PATCH SCRIPT]"
 echo "====================================================================="
 echo ""
 echo -e "This time, we will use the **Page Element** endpoints since we only want to modify the content of a single element."
-echo ""
-echo -e "Because we are targeting an element added in the previous step, we are going to invoke the ${BOLD}PATCH${RESET} endpoint directly to update its ${BOLD}pageElementDefinition${RESET}, which contains the necessary content mapping for a Content Display Fragment."
-echo ""
+# echo ""
+# echo -e "Because we are targeting an element added in the previous step, we are going to invoke the ${BOLD}PATCH${RESET} endpoint directly to update its ${BOLD}pageElementDefinition${RESET}, which contains the necessary content mapping for a Content Display Fragment."
+# echo ""
 echo -e "➡️ Invoking ${BOLD}PATCH${RESET} to endpoint: ${RED}${PATCH_URL}${RESET}"
 echo ""
 
@@ -250,20 +250,16 @@ wait_for_user
 clear
 
 # --- Final Conclusion Text 1 ---
-echo "====================================================================="
-echo ""
-echo -e "This illustrates how the API enables highly ${BOLD}specific and partial modifications${RESET} to a page's content structure."
-echo ""
-echo "====================================================================="
-
-wait_for_user
-
-clear
+# echo "====================================================================="
+# echo ""
+# echo -e "This illustrates how the API enables highly ${BOLD}specific and partial modifications${RESET} to a page's content structure."
+# echo ""
+# echo "====================================================================="
 
 # --- Final Conclusion Text 2 ---
-echo "====================================================================="
-echo ""
-echo -e "In conclusion, this demonstration covered the functionality of the ${BOLD}Site Pages${RESET}, ${BOLD}Page Specifications${RESET}, and ${BOLD}Page Elements${RESET} endpoints. We want to emphasize that the actions shown here are also available for other schemas (masters, page templates, display pages templates, and utility pages)."
-echo -e "We encourage you to explore the entire ${BOLD}Headless Admin Site API${RESET} where you will find these and many other endpoints being developed in upcoming iterations."
-echo ""
-echo "====================================================================="
+# echo "====================================================================="
+# echo ""
+# echo -e "In conclusion, this demonstration covered the functionality of the ${BOLD}Site Pages${RESET}, ${BOLD}Page Specifications${RESET}, and ${BOLD}Page Elements${RESET} endpoints. We want to emphasize that the actions shown here are also available for other schemas (masters, page templates, display pages templates, and utility pages)."
+# echo -e "We encourage you to explore the entire ${BOLD}Headless Admin Site API${RESET} where you will find these and many other endpoints being developed in upcoming iterations."
+# echo ""
+# echo "====================================================================="

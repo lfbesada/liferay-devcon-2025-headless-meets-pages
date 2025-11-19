@@ -140,7 +140,6 @@ GET_URL="${PORTAL_URL}${API_PATH}/${TARGET_SITE_ERC}/site-pages/${TARGET_PAGE_ER
 next_action "1. GET Page Specifications"
 echo "ℹ️  Action: Retrieve all Page Specifications for the target page to find the base (non-draft) version."
 echo -e "ℹ️  Endpoint: ${RED}${BOLD}${GET_URL}${RESET}"
-wait_for_user
 
 # Capture JSON response
 PAGE_SPECS_JSON=$( { set +x; } 2>/dev/null; \
@@ -156,6 +155,8 @@ fi
 
 TOTAL_SPECS=$(echo "$PAGE_SPECS_JSON" | jq '.totalCount')
 echo "✅ EXECUTION COMPLETE: Successfully retrieved ${TOTAL_SPECS} page specification(s)."
+
+wait_for_user
 
 # ---------------------------------------------------------------------
 ## Step 2: Find the DRAFT specification (base for modification)
@@ -275,8 +276,8 @@ wait_for_user
 clear
 
 # --- Final Conclusion Text ---
-echo "====================================================================="
-echo ""
-echo -e "This demonstrates how a single ${BOLD}POST request can achieve complex updates—creating a draft and modifying its content${RESET} layout—which would typically involve multiple steps within the user interface."
-echo ""
-echo "====================================================================="
+# echo "====================================================================="
+# echo ""
+# echo -e "This demonstrates how a single ${BOLD}POST request can achieve complex updates—creating a draft and modifying its content${RESET} layout—which would typically involve multiple steps within the user interface."
+# echo ""
+# echo "====================================================================="

@@ -62,14 +62,14 @@ echo "  TARGET SITE: ${TARGET_SITE_ERC}"
 echo "====================================================================="
 echo ""
 echo -e "In this script, we will use the site pages endpoints to modify some fields of our pages."
-echo -e "   - Name"
-echo -e "   - URL"
-echo -e "   - HTMLTitle"
-echo -e "   - Navigation menu visibility (conditionally)"
-echo -e ""
-echo -e "This script set the configured name and URL, and applies a formula to construct the ${BOLD}HTML Title${RESET} by adding a prefix and a suffix to the page name."
-echo -e "It will also conditionally hide ${RED}Widget Pages${RESET} from the site navigation menu."
-echo ""
+# echo -e "   - Name"
+# echo -e "   - URL"
+# echo -e "   - HTMLTitle"
+# echo -e "   - Navigation menu visibility (conditionally)"
+# echo -e ""
+# echo -e "This script set the configured name and URL, and applies a formula to construct the ${BOLD}HTML Title${RESET} by adding a prefix and a suffix to the page name."
+# echo -e "It will also conditionally hide ${RED}Widget Pages${RESET} from the site navigation menu."
+# echo ""
 echo -e "We will use Site-Pages GET and PATCH endpoints"
 echo -e "The PATCH request will focus on modifying the ${BOLD}name_i18n${RESET}, the ${BOLD}friendlyUrlPath_i18n${RESET}, and the ${BOLD}pageSettings${RESET} fields."
 echo ""
@@ -95,7 +95,6 @@ wait_for_user
 next_action "1. GET All Site Pages"
 echo "ℹ️  Action: Retrieving list of all Site Pages to extract base data."
 echo -e "ℹ️  Endpoint: ${RED}${BOLD}${PORTAL_URL}${API_PATH}/${TARGET_SITE_ERC}/site-pages?pageSize=-1${RESET}"
-wait_for_user
 
 # Capture JSON response
 PAGES_LIST_JSON=$( { set +x; } 2>/dev/null; \
@@ -259,9 +258,9 @@ clear
 
 # --- Final Message (No Summary) ---
 
-echo "====================================================================="
-echo ""
-echo -e "This demonstrates the power of using ${BOLD}PATCH${RESET} requests to perform partial and massive updates on page fields."
-echo -e "${BOLD}Automation through the API allows for efficient bulk management of content settings.${RESET}"
-echo ""
-echo "====================================================================="
+# echo "====================================================================="
+# echo ""
+# echo -e "This demonstrates the power of using ${BOLD}PATCH${RESET} requests to perform partial and massive updates on page fields."
+# echo -e "${BOLD}Automation through the API allows for efficient bulk management of content settings.${RESET}"
+# echo ""
+# echo "====================================================================="

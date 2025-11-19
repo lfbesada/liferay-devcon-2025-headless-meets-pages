@@ -80,7 +80,6 @@ echo ""
 next_action "1. GET All Site Pages from Origin Site"
 echo -e "ℹ️  ${BOLD}Action:${RESET} Retrieve the list of all Site Pages from the Origin site, using ${BOLD}nestedFields=pageSpecifications${RESET} to fetch the content simultaneously."
 echo -e "ℹ️  ${BOLD}Endpoint:${RESET} ${RED}${BOLD}${PORTAL_URL}${API_PATH}/${ORIGIN_SITE_ERC}/site-pages?pageSize=-1&nestedFields=pageSpecifications${RESET}"
-wait_for_user
 
 echo "====================================================================="
 echo "  STARTING BULK PAGE EXPORT"
@@ -142,7 +141,6 @@ fi
 next_action "2. Start Iterative Import (PUT/POST each page to Target Site)"
 echo "ℹ️  ${BOLD}Action:${RESET} Iterate through all pages to clean payload and update on Target site. This process ensures all content is transferred by relying on the initial fetch using the **nestedFields=pageSpecifications** parameter."
 echo -e "ℹ️  ${BOLD}Endpoint:${RESET} ${RED}${BOLD}${PORTAL_URL}${API_PATH}/${TARGET_SITE_ERC}/site-pages/{pageErc}${RESET} (PUT for ContentPage, POST for WidgetPage)"
-wait_for_user
 
 echo "====================================================================="
 echo "  STARTING IMPORT LOOP"
@@ -239,15 +237,15 @@ wait_for_user
 
 clear
 
-echo -e "${BOLD}${GREEN}This highlights a key feature of the new Headless API:${RESET}"
-echo -e ""
-echo -e "With this new API, all content references are ${BOLD}optional${RESET}, and the import order does not matter:"
-echo -e ""
-echo -e "  • ${GREEN}Resilience:${RESET} Even though the Web Content reference did not exist in the target site, our page import did not fail."
-echo -e "  • ${GREEN}Automatic Synchronization:${RESET} When we later create that reference in the site (by importing or creating the referenced Web Content), the content will ${BOLD}automatically${RESET} display on the page without needing any further action for the page itself."
-echo -e ""
+# echo -e "${BOLD}${GREEN}This highlights a key feature of the new Headless API:${RESET}"
+# echo -e ""
+# echo -e "With this new API, all content references are ${BOLD}optional${RESET}, and the import order does not matter:"
+# echo -e ""
+# echo -e "  • ${GREEN}Resilience:${RESET} Even though the Web Content reference did not exist in the target site, our page import did not fail."
+# echo -e "  • ${GREEN}Automatic Synchronization:${RESET} When we later create that reference in the site (by importing or creating the referenced Web Content), the content will ${BOLD}automatically${RESET} display on the page without needing any further action for the page itself."
+# echo -e ""
 
-echo "====================================================================="
-echo -e ""
-echo -e ${BOLD}"Once the reference exists in the site the content is now visible without any extra actions.${RESET}"
-echo "====================================================================="
+# echo "====================================================================="
+# echo -e ""
+# echo -e ${BOLD}"Once the reference exists in the site the content is now visible without any extra actions.${RESET}"
+# echo "====================================================================="
