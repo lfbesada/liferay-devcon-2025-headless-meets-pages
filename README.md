@@ -23,8 +23,7 @@ The following scripts were used to perform the live demonstrations. They are num
 ## 🔗 Resources
 
 * [Liferay DevCon 2025 Event Page](https://www.liferay.com/web/events/devcon2025/home)
-* [Liferay Pages REST API Documentation](hhttps://learn.liferay.com/w/dxp/integration/headless-apis/using-liferay-as-a-headless-platform/consuming-apis/consuming-rest-services)
-
+* [Liferay Pages REST API Documentation](https://learn.liferay.com/w/dxp/integration/headless-apis/using-liferay-as-a-headless-platform/consuming-apis/consuming-rest-services).
 ## 👤 Author
 
 * **Lourdes Fernández Besada** - Staff Software Engineer at Liferay
