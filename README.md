@@ -4,6 +4,8 @@ This repository contains the scripts demonstrated during the **Liferay DevCon 20
 
 The purpose of these scripts is to illustrate how to programmatically interact with Liferay DXP's Pages and Page Fragment architecture using the Pages REST APIs, effectively bridging the gap between traditional DXP sites and modern Headless applications.
 
+This development is currently managed under the Dev Feature Flag LPD-35443. Please be aware that, as this is an active development, the functionality, API, or usage instructions are subject to change.
+
 ## 🚀 Presentation Goal
 
 The session focuses on practical use cases, showing **Headless Admin API** site-pages, page-specifications, and page-elements endpoints to **perform full and partial modifications of single and multiple pages**.
